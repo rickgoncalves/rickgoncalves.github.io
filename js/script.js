@@ -11,16 +11,49 @@ function toggleMenu() {
     body.classList.toggle('no-scroll');
 }
 
-hamburger.addEventListener('click', toggleMenu);
-overlay.addEventListener('click', toggleMenu);
+// Add a small delay to the overlay to create a smoother transition
+function openMenu() {
+    hamburger.classList.add('active');
+    nav.classList.add('active');
+    body.classList.add('no-scroll');
+    
+    // Small delay for overlay to create a smoother transition
+    setTimeout(() => {
+        overlay.classList.add('active');
+    }, 50);
+}
+
+function closeMenu() {
+    hamburger.classList.remove('active');
+    nav.classList.remove('active');
+    overlay.classList.remove('active');
+    body.classList.remove('no-scroll');
+}
+
+hamburger.addEventListener('click', () => {
+    if (nav.classList.contains('active')) {
+        closeMenu();
+    } else {
+        openMenu();
+    }
+});
+
+overlay.addEventListener('click', closeMenu);
 
 // Close menu when clicking on a nav link
 document.querySelectorAll('.nav a').forEach(link => {
     link.addEventListener('click', () => {
         if (nav.classList.contains('active')) {
-            toggleMenu();
+            closeMenu();
         }
     });
+});
+
+// Close menu when pressing Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && nav.classList.contains('active')) {
+        closeMenu();
+    }
 });
 
 // Smooth scrolling for anchor links
