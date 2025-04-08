@@ -4,6 +4,7 @@ const nav = document.querySelector('.nav');
 const overlay = document.querySelector('.overlay');
 const body = document.body;
 
+
 function toggleMenu() {
     hamburger.classList.toggle('active');
     nav.classList.toggle('active');
