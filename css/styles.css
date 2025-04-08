@@ -974,9 +974,13 @@ img {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 980px) {
     .hamburger {
         display: flex;
+    }
+    
+    .main-logo {
+        height: 35px;
     }
     
     .nav {
@@ -1038,7 +1042,9 @@ img {
     .nav ul li a:hover::after {
         width: 100%;
     }
-    
+}
+
+@media (max-width: 768px) {
     .hero-content,
     .about-content,
     .contact-content {
@@ -1074,10 +1080,6 @@ img {
     
     .btn {
         width: 100%;
-    }
-    
-    .main-logo {
-        height: 40px;
     }
 }
 
@@ -1131,6 +1133,6 @@ img {
     }
     
     .main-logo {
-        height: 35px;
+        height: 30px;
     }
 } 
