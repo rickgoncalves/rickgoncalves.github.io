@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="images/patients-choice-icon-final-color.png">
 </head>
 <body>
     <!-- Header -->
@@ -14,8 +15,9 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <h1>Patient's Choice</h1>
-                    <p>Home Health Care</p>
+                    <a href="#home">
+                        <img src="images/patients-choice-logo-final-color.png" alt="Patient's Choice Home Health Care" class="main-logo">
+                    </a>
                 </div>
                 <button class="hamburger" aria-label="Menu">
                     <span></span>
@@ -85,28 +87,6 @@
         </div>
     </section>
 
-    <!-- Testimonials -->
-    <section id="testimonials" class="testimonials">
-        <div class="container">
-            <h2>What Our Clients Say</h2>
-            <p>Hear from our satisfied clients about their experiences with Patient's Choice Home Health Care.</p>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="quote">"The care and attention I received was exceptional. The staff was professional, caring, and always went above and beyond to ensure my comfort and well-being."</div>
-                    <div class="author">- Sarah Johnson</div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="quote">"They made my recovery process so much easier. The physical therapist was knowledgeable and encouraging, helping me regain my strength and independence."</div>
-                    <div class="author">- Michael Brown</div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="quote">"The team was always punctual, thorough, and respectful. They treated my mother with dignity and provided excellent care. Highly recommended!"</div>
-                    <div class="author">- Emily Davis</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- About Us -->
     <section id="about" class="about">
         <div class="container">
@@ -130,6 +110,28 @@
         </div>
     </section>
 
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <p>Hear from our satisfied clients about their experiences with Patient's Choice Home Health Care.</p>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="quote">"The care and attention I received was exceptional. The staff was professional, caring, and always went above and beyond to ensure my comfort and well-being."</div>
+                    <div class="author">- Sarah Johnson</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote">"They made my recovery process so much easier. The physical therapist was knowledgeable and encouraging, helping me regain my strength and independence."</div>
+                    <div class="author">- Michael Brown</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote">"The team was always punctual, thorough, and respectful. They treated my mother with dignity and provided excellent care. Highly recommended!"</div>
+                    <div class="author">- Emily Davis</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact -->
     <section id="contact" class="contact">
         <div class="container">
@@ -137,7 +139,7 @@
             <p>Get in touch with us to learn more about our services or to schedule a consultation.</p>
             <div class="contact-content">
                 <div class="contact-form">
-                    <form id="contactForm">
+                    <form id="contactForm" action="https://formspree.io/f/xdkepqza" method="POST">
                         <div class="form-success">
                             <i class="fas fa-check-circle"></i> Thank you for your message! We will get back to you soon.
                         </div>
@@ -209,7 +211,10 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Patient's Choice</h3>
+                    <div class="footer-brand">
+                        <img src="images/patients-choice-icon-final-color.png" alt="Patient's Choice Icon" class="footer-icon">
+                        <h3>Patient's Choice</h3>
+                    </div>
                     <p>Providing exceptional home health care services with compassion and professionalism. Your health and well-being are our top priorities.</p>
                 </div>
                 <div class="footer-section">

@@ -80,23 +80,31 @@ contactForm.addEventListener('submit', async (e) => {
     
     // Get form data
     const formData = new FormData(contactForm);
-    const data = Object.fromEntries(formData.entries());
     
     try {
-        // Here you would typically send the data to your backend
-        // For now, we'll just simulate a successful submission
-        await new Promise(resolve => setTimeout(resolve, 1000));
+        // Submit the form to Formspree
+        const response = await fetch(contactForm.action, {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
         
-        // Show success message
-        formSuccess.style.display = 'block';
-        
-        // Reset form
-        contactForm.reset();
-        
-        // Hide success message after 5 seconds
-        setTimeout(() => {
-            formSuccess.style.display = 'none';
-        }, 5000);
+        if (response.ok) {
+            // Show success message
+            formSuccess.style.display = 'block';
+            
+            // Reset form
+            contactForm.reset();
+            
+            // Hide success message after 5 seconds
+            setTimeout(() => {
+                formSuccess.style.display = 'none';
+            }, 5000);
+        } else {
+            throw new Error('Form submission failed');
+        }
         
     } catch (error) {
         console.error('Error submitting form:', error);

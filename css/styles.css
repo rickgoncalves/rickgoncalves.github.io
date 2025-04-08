@@ -80,7 +80,24 @@ img {
 
 .logo {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+}
+
+.main-logo {
+    height: 50px;
+    width: auto;
+}
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.footer-icon {
+    width: 32px;
+    height: 32px;
 }
 
 .logo h1 {
@@ -1058,6 +1075,10 @@ img {
     .btn {
         width: 100%;
     }
+    
+    .main-logo {
+        height: 40px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1107,5 +1128,9 @@ img {
     
     .social-links {
         justify-content: center;
+    }
+    
+    .main-logo {
+        height: 35px;
     }
 } 
