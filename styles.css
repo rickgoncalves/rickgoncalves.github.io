@@ -1,0 +1,553 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #f8fafc;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 70%, #3b82f6 100%);
+    color: white;
+    padding: 2px 0;
+    position: relative;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 60%);
+    animation: rotateBackground 40s linear infinite;
+    z-index: 0;
+}
+
+header .container {
+    position: relative;
+    z-index: 1;
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+    font-weight: 700;
+    position: relative;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+header p {
+    font-size: 0.9rem;
+    opacity: 0.85;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+/* Hero Section Styles */
+.hero {
+    background: linear-gradient(135deg, #e6f0ff 0%, #f0f4f8 100%);
+    color: #1e293b;
+    text-align: center;
+    padding: 70px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at center, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+    pointer-events: none;
+}
+
+.hero-content h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    color: #0f172a;
+    position: relative;
+}
+
+.hero-content h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #1e40af;
+    margin: 15px auto;
+    border-radius: 2px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    max-width: 650px;
+    margin: 0 auto 30px auto;
+    opacity: 0.9;
+}
+
+.cta-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(59, 130, 246, 0.4);
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(59, 130, 246, 0.5);
+}
+
+.services {
+    background-color: #ffffff;
+    padding: 80px 0;
+}
+
+.services h2,
+.contact h2,
+.about h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    color: #0f172a;
+    position: relative;
+}
+
+.services h2::after,
+.contact h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #1e40af;
+    margin: 15px auto;
+    border-radius: 2px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+    font-size: 3rem;
+    color: #1e40af;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .service-icon {
+    transform: scale(1.1);
+}
+
+.card h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #0f172a;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.card p {
+    color: #64748b;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.contact {
+    background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+    padding: 80px 0;
+}
+
+.contact h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #1e40af;
+    margin: 15px auto 30px auto;
+    border-radius: 2px;
+}
+
+.contact-intro {
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #334155;
+    line-height: 1.6;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+label {
+    margin-top: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #0f172a;
+}
+
+input,
+textarea {
+    margin-top: 8px;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #1e40af;
+}
+
+button {
+    margin-top: 25px;
+    padding: 15px;
+    background: linear-gradient(135deg, #1e40af 0%, #0f172a 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #0f172a 0%, #1e40af 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(30, 64, 175, 0.4);
+}
+
+.success-message {
+    background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+    border: 2px solid #3b82f6;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    animation: fadeIn 0.5s ease-in;
+    box-shadow: 0 10px 20px rgba(59, 130, 246, 0.1);
+}
+
+.success-message h3 {
+    color: #1e40af;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.success-message p {
+    color: #1e3a8a;
+    margin: 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+footer {
+    background-color: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 60px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    .services h2,
+    .contact h2 {
+        font-size: 2rem;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+}
+
+/* Animation for cards */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    animation: fadeInUp 0.6s ease-out forwards;
+    opacity: 0;
+}
+
+.card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.card:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.card:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+.card:nth-child(5) {
+    animation-delay: 0.8s;
+}
+
+.card:nth-child(6) {
+    animation-delay: 1s;
+}
+
+.card:nth-child(7) {
+    animation-delay: 1.2s;
+}
+
+.card:nth-child(8) {
+    animation-delay: 1.4s;
+}
+
+.card:nth-child(9) {
+    animation-delay: 1.6s;
+}
+
+/* Keyframe animation for header background */
+@keyframes rotateBackground {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.header-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 20px;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+}
+
+.header-logo {
+    margin-top: 10px;
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    margin-left: -10px;
+}
+
+.header-text p {
+    margin: 5 0 0 0;
+    font-size: 0.9rem;
+    opacity: 0.85;
+    text-align: left;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .header-logo {
+        height: 120px;
+    }
+    
+    .header-text p {
+        font-size: 0.8rem;
+    }
+}
+
+/* About Section Styles */
+.about {
+    background-color: #f1f5f9;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.about h2 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: #0f172a;
+    position: relative;
+}
+
+.about h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #1e40af;
+    margin: 15px auto;
+    border-radius: 2px;
+}
+
+.about p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: #334155;
+    line-height: 1.7;
+}
+
+/* Keyframes for about section fade-in */
+@keyframes fadeInAbout {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.about {
+    animation: fadeInAbout 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+/* Keyframes for hero section fade-in */
+@keyframes fadeInHero {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.hero {
+    animation: fadeInHero 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+/* Performance optimizations */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Optimize image loading */
+img {
+  content-visibility: auto;
+  contain-intrinsic-size: 150px 50px;
+}
+
+/* Optimize font loading */
+@font-face {
+  font-display: swap;
+}
+
+/* Optimize animations */
+@media (prefers-reduced-motion: no-preference) {
+  .card {
+    animation: fadeInUp 0.6s ease-out forwards;
+    opacity: 0;
+  }
+  
+  .about {
+    animation: fadeInAbout 0.8s ease-out forwards;
+    opacity: 0;
+  }
+  
+  .hero {
+    animation: fadeInHero 0.8s ease-out forwards;
+    opacity: 0;
+  }
+}
+
+/* Optimize transitions */
+@media (prefers-reduced-motion: no-preference) {
+  .cta-button {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-icon {
+    transition: transform 0.3s ease;
+  }
+  
+  input:focus,
+  textarea:focus {
+    transition: border-color 0.3s ease;
+  }
+  
+  button {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+}
+  

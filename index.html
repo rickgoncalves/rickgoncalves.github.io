@@ -1,248 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Patient's Choice Home Health Care</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="icon" type="image/png" href="images/patients-choice-icon-final-color.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="RGE Automation provides custom AI and automation solutions to boost business productivity. Specializing in process automation, AI integration, and custom software development." />
+  <meta name="keywords" content="business automation, AI solutions, custom software, process automation, integration services, web development, digital transformation" />
+  <meta name="author" content="RGE Automation" />
+  <meta name="robots" content="index, follow" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://rickgoncalves.github.io/" />
+  <meta property="og:title" content="RGE Automation - AI & Automation Services" />
+  <meta property="og:description" content="Transform your business with custom AI and automation solutions. Boost productivity and drive growth with our tailored services." />
+  <meta property="og:image" content="https://rickgoncalves.github.io/logo_resized.png" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://rickgoncalves.github.io/" />
+  <meta property="twitter:title" content="RGE Automation - AI & Automation Services" />
+  <meta property="twitter:description" content="Transform your business with custom AI and automation solutions. Boost productivity and drive growth with our tailored services." />
+  <meta property="twitter:image" content="https://rickgoncalves.github.io/logo_resized.png" />
+
+  <link rel="canonical" href="https://rickgoncalves.github.io/" />
+  <title>RGE Automation - AI & Automation Services</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <a href="#home">
-                        <img src="images/patients-choice-logo-final-color.png" alt="Patient's Choice Home Health Care" class="main-logo">
-                    </a>
-                </div>
-                <button class="hamburger" aria-label="Menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <nav class="nav">
-                    <ul>
-                        <li style="--i: 1"><a href="#home">Home</a></li>
-                        <li style="--i: 2"><a href="#services">Services</a></li>
-                        <li style="--i: 3"><a href="#about">About</a></li>
-                        <li style="--i: 4"><a href="#testimonials">Testimonials</a></li>
-                        <li style="--i: 5"><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
+  <header role="banner">
+    <div class="container header-container">
+      <div class="logo-container">
+        <img src="logo_resized.png" alt="RGE Automation Logo" class="header-logo" width="150" height="50">
+        <div class="header-text">
+          <p>Custom Integration & AI-Powered Automation Solutions</p>
         </div>
-    </header>
-    <div class="overlay"></div>
+      </div>
+    </div>
+  </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1>Your Health, <span class="highlight">Our Priority</span></h1>
-                    <p>Patient's Choice Home Health Care is thankful for the opportunity to make a positive difference to your health and your life at home. Our professionals are available 24/7 to help you through it all.</p>
-                    <div class="cta-buttons">
-                        <a href="#contact" class="btn btn-primary">Request Care</a>
-                        <a href="#services" class="btn btn-secondary">Our Services</a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Healthcare professional with patient">
-                </div>
-            </div>
-        </div>
+  <main role="main">
+    <section class="hero" id="hero" aria-labelledby="hero-heading">
+      <div class="container hero-content">
+        <h2 id="hero-heading">Smart Automation for Business Success</h2>
+        <p>Boost productivity and drive growth with our tailored AI and automation solutions designed for your specific needs.</p>
+        <a href="#contact" class="cta-button" aria-label="Get started with RGE Automation">Get Started Today</a>
+      </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <p>We offer a comprehensive range of home health care services tailored to meet your specific needs.</p>
-            <div class="services-grid">
-                <div class="service-card">
-                    <i class="fas fa-user-nurse"></i>
-                    <h3>Skilled Nursing</h3>
-                    <p>Professional nursing care in the comfort of your home, including wound care, medication management, and health monitoring.</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-hand-holding-medical"></i>
-                    <h3>Personal Care</h3>
-                    <p>Assistance with daily living activities, personal hygiene, and mobility support to maintain independence.</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-heartbeat"></i>
-                    <h3>Physical Therapy</h3>
-                    <p>Expert physical therapy to help you regain strength, improve mobility, and recover from injuries or surgeries.</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-comments"></i>
-                    <h3>Speech Therapy</h3>
-                    <p>Professional speech therapy services to improve communication, swallowing, and cognitive function.</p>
-                </div>
-            </div>
+    <section class="services" id="services" aria-labelledby="services-heading">
+      <div class="container">
+        <h2 id="services-heading">Our Services</h2>
+        <div class="card-grid" role="list">
+          <div class="card" role="listitem">
+            <i class="fas fa-cogs service-icon" aria-hidden="true"></i>
+            <h3>Business Process Automation</h3>
+            <p>Eliminate bottlenecks and free up your team by automating repetitive tasks and complex workflows. Our custom tools enhance productivity and reduce operational costs.</p>
+          </div>
+          <div class="card" role="listitem">
+            <i class="fas fa-brain service-icon" aria-hidden="true"></i>
+            <h3>AI-Powered Solutions</h3>
+            <p>Unlock the potential of your data. We leverage machine learning and AI to provide predictive insights, personalize customer experiences, and drive smarter business decisions.</p>
+          </div>
+          <div class="card" role="listitem">
+            <i class="fas fa-laptop-code service-icon" aria-hidden="true"></i>
+            <h3>Custom Software Development</h3>
+            <p>Get software built precisely for your needs. We develop tailored applications that integrate seamlessly with your existing systems, improving functionality and user experience.</p>
+          </div>
+          <div class="card" role="listitem">
+            <i class="fas fa-lightbulb service-icon" aria-hidden="true"></i>
+            <h3>Consulting Services</h3>
+            <p>Navigate the technological landscape with confidence. We provide expert guidance, strategic planning, and technology roadmaps to optimize your operations and investments.</p>
+          </div>
+          <div class="card" role="listitem">
+            <i class="fas fa-project-diagram service-icon" aria-hidden="true"></i>
+            <h3>Solution Architecture</h3>
+            <p>Build a foundation for success. Our experts design robust, scalable, and future-proof system architectures tailored to your specific business objectives and challenges.</p>
+          </div>
+          <div class="card" role="listitem">
+            <i class="fas fa-code-branch service-icon" aria-hidden="true"></i>
+            <h3>Integration Services</h3>
+            <p>Connect your disparate systems and applications effortlessly. We ensure seamless data flow and communication across your technology stack for improved efficiency and visibility.</p>
+          </div>
+          <div class="card" role="listitem">
+            <i class="fas fa-globe service-icon" aria-hidden="true"></i>
+            <h3>Web Development</h3>
+            <p>Create a powerful online presence. We build modern, responsive, and high-performing web applications and websites focused on delivering exceptional user experiences.</p>
+          </div>
+          <div class="card" role="listitem">
+            <i class="fas fa-search-dollar service-icon" aria-hidden="true"></i>
+            <h3>SEO & Digital Marketing</h3>
+            <p>Increase your online visibility and reach your target audience. We offer SEO strategies and digital marketing services to boost your presence and drive conversions.</p>
+          </div>
+          <div class="card" role="listitem">
+            <i class="fas fa-shield-alt service-icon" aria-hidden="true"></i>
+            <h3>Security Solutions</h3>
+            <p>Protect your valuable digital assets and sensitive data. We offer comprehensive security assessments, implement robust defenses, and ensure compliance against modern cyber threats.</p>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- About Us -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>About Us</h2>
-                    <p>Patient's Choice Home Health Care is dedicated to providing exceptional care in the comfort of your home. Our team of experienced professionals is committed to your well-being and recovery, ensuring you receive personalized attention and support throughout your healthcare journey.</p>
-                    <ul class="about-features">
-                        <li><i class="fas fa-check"></i> Licensed and Certified Staff</li>
-                        <li><i class="fas fa-check"></i> 24/7 Care Available</li>
-                        <li><i class="fas fa-check"></i> Personalized Care Plans</li>
-                        <li><i class="fas fa-check"></i> Family-Centered Approach</li>
-                        <li><i class="fas fa-check"></i> Continuity of Care</li>
-                        <li><i class="fas fa-check"></i> Regular Progress Updates</li>
-                    </ul>
-                </div>
-                <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Healthcare team">
-                </div>
-            </div>
-        </div>
+    <section class="about" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <h2 id="about-heading">About RGE Automation</h2>
+        <p>At RGE Automation, we specialize in transforming businesses through the power of artificial intelligence and intelligent automation. We understand that navigating the complexities of modern technology can be challenging. Our mission is to partner with you, providing bespoke solutions that streamline your operations, enhance security, and unlock new opportunities for innovation and growth. From initial consultation to implementation and ongoing support, we are dedicated to delivering tangible results and empowering your success in a rapidly evolving digital landscape.</p>
+      </div>
     </section>
 
-    <!-- Testimonials -->
-    <section id="testimonials" class="testimonials">
-        <div class="container">
-            <h2>What Our Clients Say</h2>
-            <p>Hear from our satisfied clients about their experiences with Patient's Choice Home Health Care.</p>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="quote">"The care and attention I received was exceptional. The staff was professional, caring, and always went above and beyond to ensure my comfort and well-being."</div>
-                    <div class="author">- Sarah Johnson</div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="quote">"They made my recovery process so much easier. The physical therapist was knowledgeable and encouraging, helping me regain my strength and independence."</div>
-                    <div class="author">- Michael Brown</div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="quote">"The team was always punctual, thorough, and respectful. They treated my mother with dignity and provided excellent care. Highly recommended!"</div>
-                    <div class="author">- Emily Davis</div>
-                </div>
-            </div>
+    <section class="contact" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <h2 id="contact-heading">Contact Us</h2>
+        <p class="contact-intro">Ready to transform your business? Have questions about our services? Reach out today! Fill out the form below, and one of our specialists will get back to you shortly to discuss how RGE Automation can help you achieve your goals.</p>
+        <div id="successMessage" style="display: none;" class="success-message" role="alert">
+          <h3>Thank you for your message!</h3>
+          <p>We'll get back to you as soon as possible.</p>
         </div>
+        <form id="contactForm" action="https://formspree.io/f/xyzeozzo" method="POST" aria-label="Contact form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required aria-required="true" />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required aria-required="true" />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
     </section>
+  </main>
 
-    <!-- Contact -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>Get in touch with us to learn more about our services or to schedule a consultation.</p>
-            <div class="contact-content">
-                <div class="contact-form">
-                    <form id="contactForm" action="https://formspree.io/f/xdkepqza" method="POST">
-                        <div class="form-success">
-                            <i class="fas fa-check-circle"></i> Thank you for your message! We will get back to you soon.
-                        </div>
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="service">Service Interest</label>
-                            <select id="service" name="service" required>
-                                <option value="" disabled selected>Select a service</option>
-                                <option value="skilled-nursing">Skilled Nursing</option>
-                                <option value="personal-care">Personal Care</option>
-                                <option value="physical-therapy">Physical Therapy</option>
-                                <option value="speech-therapy">Speech Therapy</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" placeholder="Tell us about your needs" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
-                <div class="contact-info">
-                    <div class="info-item">
-                        <i class="fas fa-phone"></i>
-                        <h3>Phone</h3>
-                        <p>(555) 123-4567</p>
-                        <p>Available 24/7</p>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <h3>Email</h3>
-                        <p>info@patientschoice.com</p>
-                        <p>support@patientschoice.com</p>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-location-dot"></i>
-                        <h3>Address</h3>
-                        <p>123 Healthcare Ave<br>Medical City, MC 12345</p>
-                        <p>Serving the Greater Area</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <footer role="contentinfo">
+    <div class="container">
+      <p>&copy; 2025 RGE Automation. All rights reserved.</p>
+    </div>
+  </footer>
 
-    <!-- Call to Action -->
-    <section class="cta">
-        <div class="container">
-            <h2>Ready to Get Started?</h2>
-            <p>Contact us today to learn more about our services and how we can help you or your loved ones. Our team is ready to provide the care and support you need.</p>
-            <a href="#contact" class="btn btn-primary">Contact Us Now</a>
-        </div>
-    </section>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Form submission handling
+      const form = document.getElementById('contactForm');
+      const successMessage = document.getElementById('successMessage');
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">                        
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-brand">
-                        <h3>Patient's Choice</h3>
-                    </div>
-                    <p>Providing exceptional home health care services with compassion and professionalism. Your health and well-being are our top priorities.</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#testimonials">Testimonials</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Connect With Us</h3>
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <img src="images/patients-choice-icon-final-color.png" alt="Patient's Choice Icon" class="footer-icon">
-                <p>&copy; 2025 Patient's Choice Home Health Care. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+      form.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        try {
+          const response = await fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: {
+              'Accept': 'application/json'
+            }
+          });
+          
+          if (response.ok) {
+            // Hide the form and show success message
+            form.style.display = 'none';
+            successMessage.style.display = 'block';
+            // Reset the form
+            form.reset();
+          } else {
+            throw new Error('Form submission failed');
+          }
+        } catch (error) {
+          console.error('Error:', error);
+          alert('Sorry, there was an error submitting your form. Please try again later.');
+        }
+      });
 
-    <script src="js/script.js"></script>
+      // Close menu when clicking outside
+      document.addEventListener('click', (e) => {
+        if (nav.classList.contains('nav--visible') && 
+            !nav.contains(e.target) && 
+            !navToggle.contains(e.target)) {
+          nav.classList.remove('nav--visible');
+          navToggle.classList.remove('toggled');
+          console.log('Menu closed by clicking outside');
+        }
+      });
+
+      // Close menu when clicking a nav link
+      const navLinks = document.querySelectorAll('.main-nav a');
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          nav.classList.remove('nav--visible');
+          navToggle.classList.remove('toggled');
+          console.log('Menu closed by clicking a link');
+        });
+      });
+    });
+  </script>
 </body>
-</html> 
+</html>
