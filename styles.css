@@ -411,7 +411,7 @@ footer {
 
 .header-logo {
     margin-top: 10px;
-    height: 50px;
+    height: 60px;
     width: auto;
     object-fit: contain;
     margin-left: -10px;
@@ -427,7 +427,8 @@ footer {
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .header-logo {
-        height: 120px;
+        height: 40px;
+        width: auto;
     }
     
     .header-text p {
